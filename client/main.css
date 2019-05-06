@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+header {
+  background: #f2d527;
+  left:10px;
+  right:10px;
+}
+header::after {
+  content:'';
+  display: table;
+  clear: both;
+}
+.logo {
+  float: left;
+  margin-left: 70px;
+  padding-top: 17px;
+  position: relative;
+  display: inline-block;
+}
+nav {
+  float: right;
+  width: 100%;
+  height: 85px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 12px;
+  position: relative;
+}
+.account {
+  right: 10px;
+}
+nav a {
+  color: #444;
+  text-decoration: none;
+  font-size: 40px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+body{
+  background: #eae59a;
+}
+.button-AddNewTask{
+  position: absolute;
+  text-align: center;
+  left: 45%;
+}
